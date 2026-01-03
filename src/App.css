@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: rgb(18, 18, 69);
+  margin: 1rem;
+}
+
+.game-heading {
+  font-size: 7vmin;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  color: white;
+}
+
+.image img {
+  width: 15vmin;
+}
+
+.instructions {
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+.must-read {
+  display: flex;
+  justify-content: center;
+}
+
+.heading-1,
+.heading-2 {
+  font-size: 7vmin;
+  color: rgb(155, 152, 152);
+}
+
+li {
+  font-size: 4vmin;
+  color: rgb(106, 105, 105);
+}
+
+.heading-2 {
+  margin-top: 2rem;
+}
+
+.play-button,
+.choice {
+  color: black;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 3vmin;
+  box-shadow: 0px 0px 9px 2px white;
+  cursor: pointer;
+  margin: 0.3rem;
+  width: 6.8;
+}
+
+.button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.box {
+  border: 1px solid white;
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
+.computer-box {
+  border: 1px solid white;
+  height: 2.3rem;
+  width: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.your-box {
+  border: 1px solid white;
+  height: 2.3rem;
+  width: 2.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placed-ship {
+  background-color: white;
+  height: 2.3rem;
+  width: 2.3rem;
+  position: relative;
+}
+
+.unsuccessful-attack {
+  background-color: grey;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.1;
+}
+
+.successfull-attack {
+  background-color: red;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.boxes,
+.grid-board,
+.your-battle-field,
+.box-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  height: 370px;
+  width: 400px;
+}
+
+.box-div {
+  cursor: crosshair;
+}
+
+.heading-one,
+.heading-two {
+  font-size: 4vmin;
+  margin-bottom: 0.5rem;
+}
+
+.start-game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.start-game-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.win-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-over {
+  font-size: 5vmin;
+  color: green;
+  text-align: center;
+}
+
+.turn {
+  margin-top: 14rem;
+}
+
+.your-turn {
+  font-size: 1rem;
+  width: 20rem;
+  text-align: center;
+}
+
+.your-field,
+.comp-field {
+  text-align: center;
+}
+
+.box-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  flex-wrap: wrap;
+
+  cursor: crosshair;
+}
+
+.ships-for-attack {
+  margin-top: 4rem;
+}
+
+.ships {
+  display: flex;
+  gap: 0.2rem;
+  margin-top: 1.4rem;
+  align-items: center;
+  cursor: move;
+}
+
+.ship {
+  background-color: white;
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
+.start-btn {
+  color: rgb(14, 14, 49);
+  font-size: 1.2rem;
+  padding: 0.2rem 1.8rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: rgb(8, 8, 57);
+  color: white;
+  box-shadow: 0px 0px 7px 0px white;
+}
+
+.button-start {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.start {
+  color: rgb(8, 8, 57);
+  padding: 0.2rem 1.4rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 5px 0px white;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.start:hover {
+  box-shadow: 0px 0px 7px 0px white;
+  background-color: rgb(8, 8, 57);
+  color: white;
+}
+
+.comp-field {
+  cursor: crosshair;
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+  .boxes,
+  .grid-board,
+  .your-battle-field,
+  .box-div {
+    width: 18rem;
+    height: 16rem;
+  }
+
+  .box,
+  .ship,
+  .placed-ship,
+  .computer-box,
+  .your-box {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .ships-for-attack {
+    margin-top: 0.2rem;
+  }
+
+  .ships {
+    margin-top: 1rem;
+  }
+
+  .box-div {
+    width: 18rem;
+    height: 16rem;
+  }
+
+  .turn {
+    margin-top: 1rem;
+  }
+
+  .unsuccessful-attack {
+    height: 1.1rem;
+    width: 1.1rem;
+  }
+
+  .successfull-attack {
+    height: 1.1rem;
+    width: 1.1rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 700px) {
+  .turn {
+    margin-top: 1.3rem;
+  }
+
+  .win-message {
+    top: 100%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1035px) {
+  .turn {
+    margin-top: 3rem;
+  }
+
+  .start-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
