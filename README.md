@@ -1,5 +1,19 @@
 # React + Vite
 
+<a href="https://sami-sour.github.io/BattleShip/"> Click Here</a> to play game.
+
+<h3>BattleShip Game</h3>
+A classic Battleship Game built using React, where players strategically place ships and attack the opponent’s grid. The game focuses on logic, state management, and interactive UI.
+
+<h3>Game Overview</h3>
+Battleship is a turn-based strategy game played on a 10 × 10 grid.
+Each player places ships on the grid, and players take turns trying to hit and sink the opponent’s ships.
+
+This project demonstrates:
+Grid-based game logic
+State management using React
+Component-based UI design
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
